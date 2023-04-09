@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
 
 @Data
 @AllArgsConstructor
@@ -15,6 +16,7 @@ import javax.persistence.Id;
 @Entity
 public class Product {
     @Id
+    @GeneratedValue
     private int pid;
     private String productName;
     private int qty;
